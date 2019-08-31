@@ -24,6 +24,7 @@ public class EjercicioNro1 {
        sum=num1+num2;
         
         
+       
     }
     
 }
