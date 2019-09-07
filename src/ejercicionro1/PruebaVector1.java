@@ -41,7 +41,11 @@ public class PruebaVector1 {
           /** pv.paresfor();*/
           /**pv.sumafor();*/
            /** pv. asteriscosfor();*/
-            pv.Mostrarnumeros1al100while();
+            /** pv.Mostrarnumeros1al100while();*/
+            pv.Mostrarnumeros100al1while();
+            pv.pareswhile();
+            pv.sumarwhile();
+            pv.asteriscoswhile();
           
     }
 
@@ -76,7 +80,7 @@ public  void impresionMatriz(){
  
  public void Mostrarnumeros1al100while ()
     {   
-        int i=0;
+        int i=1;
        
         while(i <=  100)
         {
@@ -99,6 +103,22 @@ public  void impresionMatriz(){
         
         
    }
+ 
+ public void Mostrarnumeros100al1while ()
+    {   
+       int i=100;
+        
+       while(i>=1){
+ 
+            System.out.print(" los valores son  :");
+           System.out.println(i);
+           i--;
+        }
+    }
+ 
+        
+        
+   
 
  public void paresfor ()
  
@@ -106,6 +126,27 @@ public  void impresionMatriz(){
        
          for(int i = 1 ; i <=  150 ; i++) {
            
+             if (i%2==0)
+             {
+               System.out.println(i);
+             }
+         
+         }
+             
+        
+    
+    
+    }
+ 
+ 
+ public void pareswhile ()
+ 
+ {   int i=1;
+       
+     
+       
+            while(i<=150) {
+                         
              if (i%2==0)
              {
                System.out.println(i);
@@ -134,6 +175,23 @@ public  void impresionMatriz(){
     
     }
 
+ public void sumarwhile ()
+ 
+ {     int sum =0;
+        int i=1;
+       
+        while(i<=200) {
+             sum = sum+i;
+        }
+          
+       
+         System.out.print(" la suma de los valores del 1 al 200 son  :");    
+         System.out.println(sum);
+        
+    
+    
+    }
+ 
 
 public void asteriscosfor ()
  
@@ -146,6 +204,26 @@ public void asteriscosfor ()
          num=teclado.nextInt();;
      
          for(int i = 1 ; i <= num ; i++) 
+         {
+           
+           System.out.println("*");
+            
+        }
+        
+        
+    }
+
+public void asteriscoswhile ()
+ 
+ {      
+     Scanner teclado=new Scanner(System.in);
+         int num;
+            num=0;
+            int i=0;
+       
+        System.out.print("Ingrese el numero deseado:");
+         num=teclado.nextInt();;
+         while(i<=num)
          {
            
            System.out.println("*");
